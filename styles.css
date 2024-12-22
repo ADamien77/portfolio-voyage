@@ -114,7 +114,7 @@ footer {
     }
 
     .gallery {
-        grid-template-columns: 1fr; /* Une seule colonne */
+        grid-template-columns: 1fr; 
     }
 
     section {
@@ -122,10 +122,10 @@ footer {
     }
 
     section h2 {
-        font-size: 1.5rem; /* Réduction de la taille */
+        font-size: 1.5rem; 
     }
 
     .gallery-item img {
-        height: 15rem; /* Ajustement pour les petits écrans */
+        height: 15rem; 
     }
 }
