@@ -98,42 +98,34 @@ h3 {
     color: #333;
 }
 
-/* Formulaire de contact */
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-form label {
-    font-weight: bold;
-}
-
-form input, form textarea {
-    padding: 0.5rem;
-    font-size: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-}
-
-form button {
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    background: #4CAF50;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-form button:hover {
-    background: #45a049;
-}
-
 /* Footer styles */
 footer {
     text-align: center;
     padding: 1rem 0;
     background: #057660;
     color: #fff;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr; /* Une seule colonne */
+    }
+
+    section {
+        padding: 1rem;
+    }
+
+    section h2 {
+        font-size: 1.5rem; /* Réduction de la taille */
+    }
+
+    .gallery-item img {
+        height: 15rem; /* Ajustement pour les petits écrans */
+    }
 }
