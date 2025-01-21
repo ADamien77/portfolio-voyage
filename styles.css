@@ -1,6 +1,8 @@
 /* Styles généraux */
+/* Applique une police de caractères par défaut avec des alternatives, réinitialise les marges et les paddings, 
+   et améliore la lisibilité grâce à une hauteur de ligne plus grande. Définit un fond clair et un texte sombre. */
 body {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -8,6 +10,8 @@ body {
     color: #333;
 }
 
+/* Styles de l'en-tête */
+/* Donne à l'en-tête un fond vert foncé, une couleur de texte blanche, et centre le contenu horizontalement. */
 header {
     background: #057660;
     color: #fff;
@@ -15,6 +19,8 @@ header {
     text-align: center;
 }
 
+/* Styles de navigation */
+/* Supprime les styles par défaut des listes non ordonnées et ajoute un fond vert. */
 nav ul {
     list-style: none;
     margin: 0;
@@ -22,21 +28,25 @@ nav ul {
     background-color: #03a282;
 }
 
+/* Aligne les éléments de la navigation horizontalement et ajoute un espace entre eux. */
 nav ul li {
     display: inline-block;
     margin-right: 1rem;
 }
 
+/* Donne aux liens de navigation une couleur blanche et supprime la décoration de texte. */
 nav ul li a {
     color: #fff;
     text-decoration: none;
 }
 
+/* Ajoute un soulignement lors du survol des liens pour une meilleure interaction visuelle. */
 nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Section styles */
+/* Styles pour les sections */
+/* Ajoute un espacement, centre horizontalement les sections, applique un fond blanc, une ombre discrète et des coins arrondis. */
 section {
     padding: 2rem;
     margin: 1rem auto;
@@ -46,6 +56,7 @@ section {
     border-radius: 8px;
 }
 
+/* Stylise les titres de niveau 2 pour les sections, avec une couleur verte, un alignement centré et un soulignement. */
 section h2 {
     color: #057660;
     font-size: 2rem;
@@ -54,6 +65,7 @@ section h2 {
     text-decoration: underline;
 }
 
+/* Ajuste les styles des titres de niveau 3 pour les rendre similaires au h2, avec des marges plus grandes. */
 h3 {
     text-align: center;
     text-decoration: none;
@@ -61,7 +73,8 @@ h3 {
     margin: 3rem;
 }
 
-/* Galerie styles */
+/* Styles pour la galerie */
+/* Utilise une grille responsive avec des colonnes flexibles et un espacement uniforme entre les éléments. */
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
@@ -71,6 +84,7 @@ h3 {
     gap: 2rem;
 }
 
+/* Définit des styles uniformes pour chaque élément de la galerie, avec une bordure, un fond blanc et des coins arrondis. */
 .gallery-item {
     text-align: center;
     border: 1px solid #ddd;
@@ -80,6 +94,7 @@ h3 {
     box-shadow: 4px 4px 10px #057660;
 }
 
+/* Ajuste l'image pour occuper toute la largeur de l'élément, avec un recadrage approprié. */
 .gallery-item img {
     width: 100%;
     height: 20rem;
@@ -87,18 +102,21 @@ h3 {
     object-fit: cover;
 }
 
+/* Ajoute un effet visuel lors du survol avec une ombre plus prononcée et un léger agrandissement. */
 .gallery-item:hover {
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
     transform: scale(1.05);
 }
 
+/* Ajoute un espacement et un style au texte des éléments de la galerie. */
 .gallery-item p {
     padding: 0.5rem;
     font-weight: bold;
     color: #333;
 }
 
-/* Footer styles */
+/* Styles pour le pied de page */
+/* Centre le texte du pied de page, applique une couleur de fond et de texte cohérente avec l'en-tête. */
 footer {
     text-align: center;
     padding: 1rem 0;
@@ -106,7 +124,8 @@ footer {
     color: #fff;
 }
 
-/* Responsive styles */
+/* Styles responsives */
+/* Modifie la navigation pour un affichage vertical sur les petits écrans, réduit la taille des images et ajuste les sections. */
 @media (max-width: 768px) {
     nav ul li {
         display: block;
